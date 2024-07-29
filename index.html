@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <title>Lista de Contato</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/TelefoneLogo.png" alt="imagem de um telefone"/>
+            <h1>Lista de Contatos</h1>
+        </header>
+        <form>
+            <input type="text" placeholder="Nome ou Apelido" id ="inNome" maxlength="50" required/>
+            <input type="number" placeholder="Telefone(ddd)" id="inTelefone" required/>
+            <input type="email" placeholder="Email(opicional)" id="InEmail"/>
+            <!-- <input type="text" placeholder="Insira um nome da Lista" id="filtro"/> -->
+            <button type="submit">Adicionar+</button>
+            <img src="./imagens/Filtro.png" alt="imagem de um filtro" id="imgFiltro" class="filtro"/>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                    <th>Email</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><!--<button type="submit">Excluir</button>--></td>
+                    <td></td>
+                    <td> <!--<span class="excluir" id="exclui"X></span>--></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr></tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
